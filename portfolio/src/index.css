@@ -1,15 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html, body {
-  @apply min-h-screen;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
-body {
-  @apply flex flex-col;
-}
-
-main {
-  @apply flex-grow;
+@layer base {
+  body {
+    @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 min-h-screen;
+  }
 }
