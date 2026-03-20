@@ -1,73 +1,128 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I denne uge har jeg skrevet en portfolio, som jeg har stylet med Tailwind.
+I dette fag skal du lære noget nyt inden for webudvikling og prøve det af i praksis.
 
-Currently, two official plugins are available:
+Du skal undersøge en ny teknologi, metode eller et værktøj, som bruges i webudvikling i dag.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Det kan f.eks. være:
 
-## React Compiler
+et framework (fx Next.js, Vue, Supabase)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TypeScript
 
-## Expanding the ESLint configuration
+et CSS-framework (f.eks. Tailwind)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+et udviklingsværktøj
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+AI i programmering
+Du må gerne tage udgangspunkt i en tidligere opgave eller et projekt, hvis det hjælper dig med at teste teknologien.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Husk at sende dit valg til din underviser.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Opgavebeskrivelse
+Du skal:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Lære noget nyt om en teknologi eller metode inden for webudvikling
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Prøve det af i praksis i et lille projekt eller eksempel
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Forklare hvad mulighederne er ved teknologien
+
+Dokumentation
+Du skal dokumentere dit arbejde i en rapport (max 2 sider) eller en præsentation.
+
+Den skal indeholde:
+
+Problemstilling
+
+Hvad vil du undersøge?
+Eksempel:
+Kan Tailwind CSS gøre det hurtigere at udvikle en brugerflade end almindelig CSS?
+Metode
+
+Hvordan har du undersøgt det?
+Fx søgt information på nettet, brugt AI, set videoer, testet det i et projekt
+Eksempel / afprøvning
+
+Vis hvad du har lavet i praksis
+Det kan være:
+kode
+en funktion
+en ændring i et tidligere projekt
+Konklusion
+
+Hvad har du lært?
+hvad kan teknologien bruges til?
+hvad er fordelene?
+hvad er begrænsningerne?
+Afslutning
+På den sidste dag skal du præsentere dit arbejde for holdet.
+
+Du skal vise:
+
+hvad du har undersøgt
+
+hvad du har lavet
+
+hvad du har lært
+
+
+
+Tailwind CSS?
+Problemstilling
+Jeg vil undersøge, om Tailwind CSS kan gøre det hurtigere og mere effektivt at udvikle responsive brugerflader sammenlignet med traditionel CSS.
+
+Jeg har undersøgt teknologien på følgende måder:
+Læst officiel dokumentation på tailwindcss.com (især v4-guides og cheat sheets)
+Set korte YouTube-videoer om Tailwind v4 + Vite/React (ca. 20–30 min total)
+Brugt AI (Grok) til at få forklaringer, kodeeksempler og fejlfinding
+Lavet et lille praktisk projekt: En responsiv single-page portfolio i React + TypeScript + Vite med Tailwind CSS styling
+Sammenlignet arbejdsflowet med, hvordan jeg tidligere ville have gjort det med almindelig CSS (f.eks. separate CSS-filer og custom klasser)
+
+Afprøvning
+
+Jeg har bygget en personlig portfolio-side med følgende sektioner:
+Header med navigation og dark/light mode toggle
+Hero-sektion med gradient baggrund
+Om mig-sektion med billede og tekst
+Projekter-sektion med kort 
+Kontakt-formular 
+Footer
+
+Projektet er lavet med semantisk HTML (<header>, <main>, <footer>, <section>) og Tailwind utility-klasser direkte i JSX.
+
+Eksempler på brugt Tailwind:
+Responsivt grid: grid md:grid-cols-2 gap-12
+Hover-effekter: hover:scale-105 hover:shadow-2xl transition-all duration-300
+Dark mode: dark:bg-gray-950 dark:text-white
+Gradient: bg-gradient-to-br from-blue-600 to-indigo-700
+
+Jeg brugte også en cheat sheet (nerdcave.com/tailwind-cheat-sheet) til at slå klasser op hurtigt.
+Kode er tilgængelig i mit GitHub-repository:(https://github.com/victoria0848/portfolio).
+
+Konklusion
+Jeg har lært, at Tailwind CSS er en utility-first tilgang, hvor man skriver små, genbrugelige klasser direkte i HTML/JSX i stedet for at opfinde egne klassenavne og skrive lange CSS-regler.
+
+Hvad kan teknologien bruges til?
+Hurtige prototyper og landing pages
+Moderne webapplikationer (React, Next.js, Vue osv.)
+Projekter hvor man skal ændre design ofte
+
+Fordele
+Meget hurtigere styling 
+Responsivt design er indbygget (f.eks. md:, lg: prefix)
+Dark mode på 1 linje kode
+Konsistent brug af farver, spacing og typografi
+
+Begrænsninger
+Kræver build-værktøj (Vite, PostCSS) – ikke bare link til CDN i produktion
+Kan føles overvældende hvis man er vant til traditionel CSS
+
+Alt i alt: Ja, Tailwind CSS gør det klart hurtigere at udvikle brugerflader.
+
+Kilder
+Officiel Tailwind CSS dokumentation: https://tailwindcss.com/docs
+Tailwind Cheat Sheet: https://nerdcave.com/tailwind-cheat-sheet
+Tailwind v4 blog og upgrade-guide: https://tailwindcss.com/blog/tailwindcss-v4-alpha
+YouTube: “Tailwind CSS v4 Crash Course”
